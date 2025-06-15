@@ -13,5 +13,12 @@ export default StyleSheet.create({
 
     text:{
         color:'white'
-    }
+    },
+
+
+    button: {
+        fontSize: 20,
+        textDecorationLine: 'underline',
+        color: 'white',
+    },
 })

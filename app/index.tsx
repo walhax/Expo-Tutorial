@@ -8,7 +8,7 @@ export default function Index() {
       style={style.background}
     >
       <Text style={style.text}>Home Screen.</Text>
-      <Link href={'./About'}>Go to About screen</Link>
+      <Link style={style.button} href={'./About'}>Go to About screen</Link>
     </View>
   );
 }

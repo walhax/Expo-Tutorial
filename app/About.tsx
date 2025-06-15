@@ -7,7 +7,7 @@ export default function About() {
   return (
     <View style={style.background}>
       <Text style={style.text}>About Screen.</Text>
-      <Link href={'./'}>Go back to home screen.</Link>
+      <Link style={style.button} href={'./'}>Go back to home screen.</Link>
     </View>
   )
 }
