@@ -6,7 +6,7 @@ export default function Index() {
     <View
       style={style.background}
     >
-      <Text style={style.text}>home screen.</Text>
+      <Text style={style.text}>This is home screen.</Text>
     </View>
   );
 }
