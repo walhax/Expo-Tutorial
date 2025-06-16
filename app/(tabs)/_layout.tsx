@@ -4,10 +4,22 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 
 
 
-export default function _layout() {
+export default function TabLayout() {
   return (
-    <Tabs>
-           
+    <Tabs
+        screenOptions={{
+            tabBarActiveTintColor: '#ffd33d',
+            headerStyle: {
+            backgroundColor: '#25292e',
+            },
+            headerShadowVisible: false,
+            headerTintColor: '#fff',
+            tabBarStyle: {
+            backgroundColor: '#25292e',
+            },
+        }}
+    >
+
       <Tabs.Screen
         name="index"
         options={{
@@ -18,7 +30,7 @@ export default function _layout() {
         }}
       />
       <Tabs.Screen
-        name="about"
+        name="About"
         options={{
           title: 'About',
           tabBarIcon: ({ color, focused }) => (
@@ -27,5 +39,5 @@ export default function _layout() {
         }}
       />
     </Tabs>
-  )
+  );
 }
