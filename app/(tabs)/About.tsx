@@ -1,6 +1,5 @@
 import { View, Text } from 'react-native'
-import React from 'react'
-import style from '@/styles/AboutStyle'
+import style from '@/styles/aboutStyle'
 import { Link } from 'expo-router'
 
 export default function About() {
