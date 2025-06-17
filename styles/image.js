@@ -12,10 +12,7 @@ export default StyleSheet.create({
         flex:2/3,
     },
     
-    footerContainer: {
-        flex: 1 / 3,
-        alignItems: 'center',
-    },
+   
 
 
 })

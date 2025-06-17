@@ -20,4 +20,9 @@ export default StyleSheet.create({
         textDecorationLine: 'underline',
         color: 'white',
     },
+
+    footerContainer: {
+        flex: 1 / 3,
+        alignItems: 'center',
+    },
 })
