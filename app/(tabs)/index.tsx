@@ -7,6 +7,9 @@ import imgstyles from "@/styles/image"
 import * as imgPicker from "expo-image-picker"
 import IconButton from '@/components/IconButton';
 import CircleButton from '@/components/CircleButton';
+import EmojiPicker from '@/components/EmojiPicker';
+
+
 
 const PlaceholderImage = require('@/assets/images/background-image.png');
 
@@ -14,6 +17,7 @@ const PlaceholderImage = require('@/assets/images/background-image.png');
 export default function Index() {
   const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined);
   const [showAppOptions, setShowAppOptions] = useState<boolean>(false);
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
 
 
   const pickImage = async () =>{
@@ -36,9 +40,15 @@ export default function Index() {
     setShowAppOptions(false);
   };
 
-  const onAddSticker = () => {
-    // we will implement this later
+
+    const onAddSticker = () => {
+    setIsModalVisible(true);
   };
+
+  const onModalClose = () => {
+    setIsModalVisible(false);
+  };
+
 
   const onSaveImageAsync = async () => {
     // we will implement this later
@@ -60,12 +70,16 @@ export default function Index() {
             <IconButton icon="save-alt" label="Save" onPress={onSaveImageAsync} />
           </View>
         </View>)
-      :
+      :(
         <View style={style.footerContainer}>
           <Button theme="primary" label="Choose a photo" onPress={pickImage} />
           <Button label="Use this photo" onPress={()=>setShowAppOptions(true)} />
         </View>
-      }
+      )}
+
+      <EmojiPicker isVisible={isModalVisible} onClose={onModalClose}>
+        {/* Emoji list component will go here */}
+      </EmojiPicker>
     </View>
   );
 }

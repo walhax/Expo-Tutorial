@@ -6,12 +6,12 @@ export default StyleSheet.create({
         backgroundColor:'#25292e',
         alignItems:'center',
         flex:1,
-        rowGap:'20px',
+        rowGap:20,
+        paddingTop: 20,
     },
 
     optionsContainer: {
-        position: 'absolute',
-        bottom: 80,
+        flex:1/3
     },
 
     optionsRow: {
