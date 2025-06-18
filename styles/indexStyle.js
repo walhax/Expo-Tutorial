@@ -6,12 +6,21 @@ export default StyleSheet.create({
         backgroundColor:'#25292e',
         alignItems:'center',
         flex:1,
+        rowGap:'20px',
     },
 
+    optionsContainer: {
+        position: 'absolute',
+        bottom: 80,
+    },
 
+    optionsRow: {
+        alignItems: 'center',
+        flexDirection: 'row',
+    },
 
     text:{
-        color:'white'
+        color:'white',
     },
 
 
