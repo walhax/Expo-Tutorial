@@ -6,7 +6,7 @@ export default StyleSheet.create({
         backgroundColor:'#25292e',
         alignItems:'center',
         flex:1,
-        rowGap:20,
+        rowGap:40,
         paddingTop: 20,
     },
 
@@ -31,7 +31,7 @@ export default StyleSheet.create({
     },
 
     footerContainer: {
-        flex: 1 / 3,
+        flex:1/3,
         alignItems: 'center',
     },
 })
